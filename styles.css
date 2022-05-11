@@ -1,0 +1,12 @@
+body { padding: 0 20px; font-family: 'PT Sans', sans-serif;  }
+.calculated { color: #e04f45; }
+.explanation { max-width: 700px; line-height: 1.5; font-size: 110% }
+#rescale { position: absolute; bottom: 5px; right: 5px;}
+#rescale > a { color: black; font-size: 90%; text-decoration: none; border-bottom: 1px dotted #67758c; }
+#optionBox { position: fixed; z-index: 1; width: 320px; right: 20px; top: 0px; }
+#optionBoxHead { background-color: #e3e9f4; border: 1px #666 solid; border-top: 0; padding: 10px; cursor: pointer;}
+#optionBoxBody { font-size: 90%; border-left: 1px #666 solid; border-right: 1px #666 solid; background-color: #fff; padding: 5px; padding-bottom: 10px; line-height: 1.6;}
+dt { margin-top: 10px; }
+dd { font-size: 85%; }
+dd > ul { margin: 5px 0; }
+dd > p { margin-top: 0; margin-bottom: 5px; }
