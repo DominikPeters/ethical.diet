@@ -1,0 +1,160 @@
+<script>
+LIFESPAN = "Average Lifespan (days)";
+PRODUCTION = "Average production (kg)";
+SLEEP = "% sleeping";
+CEF_ACE = "CEF (ACE)";
+CEF_CBP = "CEF (Compassion by the Pound)";
+LIVEABILITY = "liveability";
+CO2 = "kg CO2e/kg";
+BRAIN_MASS = "Brain mass (g)";
+NEURONS = "Neuron count";
+
+var app = angular.module("ethicalDietApp", ['angular-animation-counter']);
+app.controller("myCtrl", function($scope) {
+    $scope.neuronWeight = "linear";
+    $scope.includeElasticity = "CBP";
+    $scope.considerLiveability = true;
+    $scope.showCO2 = false;
+    $scope.deathEquivalent = 0;
+    $scope.minimumWage = 7.5;
+    $scope.preslaughterDeathAge = 0.5; // for meat animals dying before slaughter, what's their average age?
+
+    $scope.considerBrains = false;
+    $scope.considerElasticity = false;
+
+    $scope.showHens = true;
+    $scope.showChickens = true;
+    $scope.showPigs = true;
+    $scope.showCows = true;
+    $scope.showDairy = true;
+    $scope.showDucks = false;
+    $scope.showTurkeys = false;
+    $scope.showLambs = false;
+    $scope.showSalmons = false;
+
+    $scope.showOptionBox = false;
+    $scope.toggleOptionBox = function() {
+        $scope.showOptionBox = !$scope.showOptionBox;
+    }
+
+    //$scope.animalFilter = {};
+    //function filterByAnimal(food) {
+
+    //}
+
+    $scope.zoom = 100;
+
+    $scope.sources = {% include sources.json %}
+
+    $scope.foods = {% include foods.json %}
+
+    $scope.foods_array = [];
+    Object.keys($scope.foods).forEach(function(value,index) {
+        $scope.foods_array[index] = $scope.foods[value];
+    });
+
+    $scope.pretty_round = function(number) {
+        if (number > 1000) {
+            return Math.round(number / 1000).toString() + "k";
+        } else if (number < 0.5) {
+            return number.toFixed(2);
+        } else if (number < 5) {
+            return number.toFixed(1);
+        } else {
+            return number.toFixed(0);
+        }
+    }
+
+    $scope.hours = function(food) {
+        result = 0;
+        // go through different animal sources
+        Object.keys(food).forEach(function(source,index) {
+            if (food[source] > 0) {
+                animal = $scope.sources[source];
+                // raw living hours
+                time = (food[source] / animal[PRODUCTION]) * (animal[LIFESPAN] + $scope.deathEquivalent) * 24;
+                if ($scope.considerLiveability) {
+                    time = ((((1/animal[LIVEABILITY]) - 1) * $scope.preslaughterDeathAge) + 1) * time;
+                }
+                if ($scope.excludeSleep) {
+                    time = (1-animal[SLEEP]) * time;
+                    // note that future free-range adjustment needs to happen INSIDE here
+                    // additive, not an extra factor
+                }
+                if ($scope.considerElasticity && $scope.includeElasticity == "ACE") {
+                    time = animal[CEF_ACE] * time;
+                }
+                if ($scope.considerElasticity && $scope.includeElasticity == "CBP") {
+                    time = animal[CEF_CBP] * time;
+                }
+                if ($scope.considerBrains && $scope.neuronWeight == "brain_mass") {
+                    time = (animal[BRAIN_MASS]/$scope.sources["Broiler"][BRAIN_MASS]) * time;
+                }
+                if ($scope.considerBrains && $scope.neuronWeight == "linear") {
+                    time = (animal[NEURONS]/$scope.sources["Broiler"][NEURONS]) * time;
+                }
+                if ($scope.considerBrains && $scope.neuronWeight == "squareRoot") {
+                    time = (Math.sqrt(animal[NEURONS])/Math.sqrt($scope.sources["Broiler"][NEURONS])) * time;
+                }
+                if ($scope.considerBrains && $scope.neuronWeight == "square") {
+                    time = (Math.pow(animal[NEURONS],2)/Math.pow($scope.sources["Broiler"][NEURONS],2)) * time;
+                }
+                if ($scope.considerBrains && $scope.neuronWeight == "log") {
+                    time = (Math.log(animal[NEURONS])/Math.log($scope.sources["Broiler"][NEURONS])) * time;
+                }
+                if ($scope.weightBrian) {
+                    time = animal["Brian"] * time;
+                }
+                if ($scope.showCO2) {
+                    result += food[source] * animal[CO2];
+                    $scope.zoom = 5000;
+                } else {
+                    result += time;
+                }
+            }
+        });
+        // round
+        return result;
+    }
+
+    $scope.days = function(food) {
+        hours = $scope.hours(food);
+        if (hours > 50) {
+            return " (" + Math.round(hours / 24).toString() + " days)";
+        } else {
+            return "";
+        }
+    }
+
+    // description of units used
+    // depending on user's modelling choices
+    $scope.long_unit = function() {
+        string = "";
+        if ($scope.weightBrian) {
+            string += "suffering-adjusted "; 
+        }
+        if ($scope.considerBrains && $scope.neuronWeight != "brain_mass") {
+            string += "neuron-weighted ";
+        }
+        if ($scope.considerBrains && $scope.neuronWeight == "brain_mass") {
+            string += "brain-mass-weighted ";
+        }
+        if ($scope.excludeOutside) {
+            string += "inside ";
+        }
+        if ($scope.excludeSleep) {
+            string += "waking ";
+        }
+        string += "hours";
+        return string;
+    };
+
+    $scope.unit = function() {
+        if ($scope.showCO2) {
+            return "kg CO₂e";
+        } else {
+            return "hours";
+        }
+    };
+});
+</script>

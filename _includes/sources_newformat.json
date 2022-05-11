@@ -1,0 +1,602 @@
+{
+    "Caged hen": {
+        "Average Lifespan (days)": {
+            "value": 504,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 20.5,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.4583333333333333,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 4,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.91,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.91,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 1.86,
+            "source": null
+        },
+        "Brian": {
+            "value": 2.5,
+            "source": null
+        }
+    },
+    "Cage-free hen": {
+        "Average Lifespan (days)": {
+            "value": 504,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 20,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.4583333333333333,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 4,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.91,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.91,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 2.38,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Broiler": {
+        "Average Lifespan (days)": {
+            "value": 42,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 1.83,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.16666666666666666,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 0.967,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 4,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.3,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.76,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 2.33,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Slow-growing broiler": {
+        "Average Lifespan (days)": {
+            "value": 70,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 1.83,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.16666666666666666,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 0.955,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 4,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.3,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.76,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 2.33,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Pig": {
+        "Average Lifespan (days)": {
+            "value": 183,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 91.1,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.3333333333333333,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 2200000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 180,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.57,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.74,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 4.62,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Turkey": {
+        "Average Lifespan (days)": {
+            "value": 126,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 10.3,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.3333333333333333,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 7,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.33,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.76,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 3.41,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Beef cow": {
+        "Average Lifespan (days)": {
+            "value": 402,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 339,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.16666666666666666,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 3000000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 442,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.5,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.68,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 15.23,
+            "source": null
+        },
+        "Brian": {
+            "value": 1,
+            "source": null
+        }
+    },
+    "Dairy cow": {
+        "Average Lifespan (days)": {
+            "value": 2009,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 50420,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.16666666666666666,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 3000000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 442,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.45,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.56,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 1.062,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Lamb": {
+        "Average Lifespan (days)": {
+            "value": 180,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 60,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.16666666666666666,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 2200000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 140,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.5,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.68,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 20.44,
+            "source": null
+        },
+        "Brian": {
+            "value": 1,
+            "source": null
+        }
+    },
+    "Farmed salmon": {
+        "Average Lifespan (days)": {
+            "value": 720,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 2.73,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 1,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": null,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 10000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 0.26666666666666666,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.43,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.43,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 4.14,
+            "source": null
+        },
+        "Brian": {
+            "value": 0.9,
+            "source": null
+        }
+    },
+    "Duck": {
+        "Average Lifespan (days)": {
+            "value": 45,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 3.5,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0.4,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 0.95,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": 0.49765124555160145,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 221000000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 7,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.3,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.76,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 2.33,
+            "source": null
+        },
+        "Brian": {
+            "value": 1.8,
+            "source": null
+        }
+    },
+    "Shrimp": {
+        "Average Lifespan (days)": {
+            "value": 180,
+            "source": null
+        },
+        "Average production (kg)": {
+            "value": 0.025,
+            "source": null
+        },
+        "% sleeping": {
+            "value": 0,
+            "source": null
+        },
+        "% outside if free-range": {
+            "value": null,
+            "source": null
+        },
+        "liveability": {
+            "value": 0.3,
+            "source": null
+        },
+        "Lifetime parent animal (days)": {
+            "value": 1,
+            "source": null
+        },
+        "Neuron count": {
+            "value": 100000,
+            "source": null
+        },
+        "Brain mass (g)": {
+            "value": 0.001,
+            "source": null
+        },
+        "CEF (ACE)": {
+            "value": 0.43,
+            "source": null
+        },
+        "CEF (Compassion by the Pound)": {
+            "value": 0.43,
+            "source": null
+        },
+        "kg CO2e/kg": {
+            "value": 0,
+            "source": null
+        },
+        "Brian": {
+            "value": 0.7,
+            "source": null
+        }
+    }
+}
